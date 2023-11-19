@@ -16,6 +16,9 @@ import {
   nodejs,
   reactjs,
   threejs,
+  memory,
+  bank,
+  horrorgame,
   } from "../assets/constants";
   
   export const navLinks = [
@@ -110,68 +113,64 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Jeu Memory",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Application JavaFX qui permet de jouer au jeu Memory. Le jeu est composé de 16 cartes qui sont retournées face cachée. Le but du jeu est de retrouver les paires de cartes identiques en un minimum de coups.",
       tags: [
         {
-          name: "react",
+          name: "java",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "javafx",
           color: "green-text-gradient",
         },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: memory,
+      source_code_link: "https://github.com/Antwannnn/Memory-Game",
     },
     {
-      name: "Job IT",
+      name: "Agence Bancaire",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Application java qui permet de gérer les comptes bancaires des clients d'une agence bancaire mais également les comptes des employés de l'agence.",
       tags: [
         {
-          name: "react",
+          name: "java",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "javafx",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "oracle-sql",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: bank,
+      source_code_link: "https://github.com/IUT-Blagnac/sae2023-bank-1b3",
     },
     {
-      name: "Trip Guide",
+      name: "Prototype de jeu d'horreur en 3D",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Prototype de jeu d'horreur en 3D développé avec le moteur de jeu Unreal Engine 4. Mécaniques de base et interactions avec l'environnement implémentées.",
       tags: [
         {
-          name: "nextjs",
+          name: "c++",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "unreal-engine-4",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "blueprint",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: horrorgame,
+      source_code_link: "https://github.com/Antwannnn/TheForgottenWords_SourceCode/tree/main",
     },
   ];
   
-  export { services, technologies, experiences, projects };
+  export { services, technologies, projects };
