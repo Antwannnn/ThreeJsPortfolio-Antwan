@@ -11,6 +11,7 @@ import {
   c,
   python,
   ue,
+  oracle,
   jetbrains,
   javascript,
   nodejs,
@@ -85,7 +86,7 @@ import {
       icon: c,
     },
     {
-      name: "react JS",
+      name: "React JS",
       icon: reactjs,
     },
     {
@@ -101,13 +102,17 @@ import {
       icon: git,
     },
     {
-      name: "jetbrains",
+      name: "Jetbrains",
       icon: jetbrains,
     },
     {
       name: "Unreal Engine",
       icon: ue,
     },
+    {
+      name: "Oracle",
+      icon: oracle
+    }
   ];
 
   
