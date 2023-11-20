@@ -8,6 +8,7 @@ import { menu, close } from '../assets/constants';
 const Navbar = () => {
 
   const [active, setActive] = useState("");
+  const [toggle, setToggle] = useState(false);
 
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary `}>
@@ -21,13 +22,30 @@ const Navbar = () => {
         <p className="text-white text-[18px] font-bold cursor-pointer">
           Antoine Leboucher</p>
         </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-5'>
           {navLinks.map((link) => (
-            <li key={link.id}>
+            <li key={link.id} className={`${active === link.title ? "text-white" : "text-secondary"} 
+            hover:text-white text-[14px] font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
+        <div className='sm:hidden flex flex-1 justify-end items-center'>
+          <img src={toggle ? close : menu} alt="menu" className='w-[28px] h-[28px] object-contain cursor-pointer' 
+          onClick={() => setToggle(!toggle)}
+          />
+        </div>
+
+        <div className={`${toggle ? 'flex' : 'hidden'} p-6 blue-grey-simple absolute top-12 right-0 z-10 rounded-xl mx-4 my-1 min-w-[140px]` }>
+          <ul className='list-none flex justify-end items-start flex-col gap-10'>
+            {navLinks.map((link) => (
+              <li key={link.id} className={`${active === link.title ? "text-white" : "text-secondary"} 
+              hover:text-white text-[14px] font-medium cursor-pointer`} onClick={() => setActive(link.title)}>
+                <a href={`#${link.id}`}>{link.title}</a>
+              </li>
+            ))}
+            </ul>
+        </div>
       </div>
     </nav>
   )

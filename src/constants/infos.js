@@ -32,6 +32,10 @@ import {
       title: "Projets",
     },
     {
+      id: "tech",
+      title: "Technologies",
+    },
+    {
       id: "contact",
       title: "Contact",
     },
