@@ -6,7 +6,7 @@ import { IslandCanvas } from './canvas';
 const Hero = () => {
   return (
     <section className='relative w-full h-screen mx-auto'>
-      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl  flex flex-row justify-between items-start gap-5`}>
+      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl  flex flex-row justify-evenly items-start`}>
         <div className='flex justify-center items-start mt-5'>
           <div className='flex flex-col items-center'>
             <div className='bg-[#B02A4C] w-5 h-5 rotate-45' />
@@ -18,11 +18,11 @@ const Hero = () => {
               <span className='text-[#7c2f42]'> software.</span>
             </p>
           </div>
+          
         </div>
-        <div>
+        <div className='w-80 h-full items-start top-0'>
           <IslandCanvas />
-
-        </div>
+          </div>
       </div>
     </section>
   )
