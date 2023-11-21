@@ -27,6 +27,8 @@ import threejs from "./tech/threejs.svg";
 import menu from './menu.svg';
 import close from './close.svg';
 
+import logo from './logo.png';
+
 
 export {
   backend,
@@ -38,6 +40,7 @@ export {
   close,
   memory,
   bank,
+  logo,
   horrorgame,
   css,
   git,
