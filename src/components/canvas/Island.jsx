@@ -14,7 +14,7 @@ const Island = () => {
     <mesh>
       <hemisphereLight intensity={1} groundColor="black"/>
       <pointLight intensity={1}/>
-      <primitive object={Model.scene}         scale={0.1} position={[0, 2.5, 0]}/>
+      <primitive object={Model.scene}         scale={5} position={[0, 1.7, 0]}/>
     </mesh>
   );
 };
